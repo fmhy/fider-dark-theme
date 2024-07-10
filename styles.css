@@ -1,0 +1,248 @@
+:root {
+  --background-color: #202020;
+  --foreground-color: #fafafa;
+  --text-gray-500: #e0e0e0;
+  --text-gray-600: #d8d8d8;
+  --text-gray-700: #d2d2d2;
+  --bg-gray-50: #282828;
+  --bg-gray-100: #303030;
+  --input-bg-color: #404040;
+  --input-bg-color-hover: #303030;
+  --dropdown-bg-color-hover: #505050;
+  --btn--toggle-off-bg-color: #454545;
+  --btn--toggle-on-bg-color: #0d77c4;
+  --btn--dng-color: #dc2626;
+  --btn--dng-color-hover: #b21d1d;
+  --btn--prim-bg-color: #0d77c4;
+  --btn--prim-bg-color-hover: #055b99;
+  --selection-bg: #000000bb;
+  --selection-fg: #ffffffee;
+  --primary: #81caff;
+  --staff-username: #db93fc;
+  --voted: #24a3ff;
+  --link: #24a3ff;
+  --link-hover: #3b8cc7;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+.c-powered {
+  display: none;
+}
+
+.rounder {
+  border-radius: 8px;
+}
+
+.shadow {
+  box-shadow: 0 0px 10px 0 #101010;
+}
+
+.text-sm {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.c-button img[alt="GitHub"] {
+  padding-right: 5px;
+  filter: invert(1);
+}
+
+.c-signin-control__oauth {
+  grid-template-columns: 1fr 1fr;
+}
+
+.c-modal-window .c-modal-footer {
+  background-color: var(--background-color);
+}
+
+.c-modal-window {
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 0 16px var(--background-color);
+}
+
+#c-header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-color);
+  z-index: 2;
+}
+
+#p-home,
+#p-show-post,
+#p-my-settings {
+  margin-top: 48px;
+}
+
+#p-home .p-home__welcome-col {
+  background-color: transparent;
+}
+
+.c-input,
+.c-textarea,
+.c-button--secondary {
+  background-color: var(--input-bg-color);
+  color: var(--foreground-color);
+  border: none;
+}
+
+.c-button--tertiary {
+  color: var(--foreground-color);
+}
+
+.c-button--primary {
+  background-color: var(--btn--prim-bg-color);
+  border: none;
+}
+
+.c-button--primary:hover {
+  background-color: var(--btn--prim-bg-color-hover);
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-fg);
+}
+.c-username {
+  color: var(--primary);
+}
+
+.c-username--staff {
+  color: var(--staff-username);
+}
+
+.c-username--staff::selection {
+  color: var(--staff-username);
+}
+
+.c-button--secondary:hover {
+  background-color: var(--input-bg-color-hover);
+}
+
+.c-button--danger {
+  background-color: var(--btn--dng-color);
+  border: none;
+  color: var(--foreground-color);
+  padding-bottom: 8px;
+}
+
+.c-image-upload .preview .c-button--danger {
+  padding: 3px 7px 4px 7px;
+  font-size: 12px;
+}
+
+.c-button--danger:hover {
+  background-color: var(--btn--dng-color-hover);
+  border: none;
+}
+
+.c-toggle:not(.c-toggle--enabled) {
+  background-color: var(--btn--toggle-off-bg-color);
+}
+
+.c-toggle--enabled {
+  background-color: var(--btn--toggle-on-bg-color);
+}
+
+svg {
+  color: var(--foreground-color);
+}
+
+.c-vote-counter__button {
+  color: var(--foreground-color);
+}
+
+.text-title {
+  color: var(--foreground-color);
+}
+
+.text-category {
+  color: var(--foreground-color);
+  margin-right: -4px;
+}
+
+.bg-gray-50 {
+  background-color: var(--bg-gray-50);
+}
+
+.bg-gray-100 {
+  background-color: var(--bg-gray-100);
+  border-radius: 5px;
+  padding: 3px 5px 3px 5px;
+  color: var(--foreground-color);
+}
+
+.c-dropdown__handle {
+  margin-left: 4px;
+}
+
+.c-dropdown__list {
+  background: var(--input-bg-color-hover);
+  border: none;
+}
+
+#input-avatarType {
+  margin-bottom: 8px;
+}
+
+.c-select {
+  background: var(--input-bg-color);
+  color: var(--foreground-color);
+  border: none;
+}
+
+option {
+  color: var(--foreground-color);
+}
+
+option:hover {
+  background: var(--dropdown-bg-color-hover);
+}
+
+.c-dropdown__listitem {
+  color: var(--foreground-color);
+}
+
+.c-dropdown__listitem:hover {
+  background: var(--dropdown-bg-color-hover);
+}
+
+.text-gray-500 {
+  color: var(--text-gray-500);
+}
+
+.text-gray-600 {
+  color: var(--text-gray-600);
+}
+
+.text-gray-700,
+.text-muted {
+  color: var(--text-gray-700);
+}
+
+.text-link,
+.text-title:hover,
+.c-vote-counter__button:hover,
+.c-vote-counter__button:hover svg {
+  color: var(--primary);
+}
+
+.c-vote-counter__button--voted svg {
+  color: var(--link);
+}
+
+.text-link:hover {
+  color: var(--link-hover);
+}
+
+.c-tag {
+  border-radius: 15px;
+  padding-bottom: 2px;
+}
